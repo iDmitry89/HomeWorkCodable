@@ -47,7 +47,14 @@
                             <outlet property="delegate" destination="DGs-lg-BC8" id="0pr-ZF-C4t"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="List autos of marka" largeTitleDisplayMode="always" id="mBa-Wt-aU0"/>
+                    <navigationItem key="navigationItem" title="List autos of marka" largeTitleDisplayMode="always" id="mBa-Wt-aU0">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="wU3-kj-iZb"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="1ev-Us-P8m">
+                            <connections>
+                                <action selector="addNewCar:" destination="DGs-lg-BC8" id="h7l-YN-GdV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUm-Xb-wPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

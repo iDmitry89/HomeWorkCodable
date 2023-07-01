@@ -20,8 +20,8 @@ final class RestApiClient2 {
             return
         }
 
-        urlSessionModels.dataTask(with: urlRequest) { data, response, error in
-            guard let data = data, let response = response else {
+        urlSessionModels.dataTask(with: urlRequest) { dataModels, response, error in
+            guard let data = dataModels, let response = response else {
                 DispatchQueue.main.async {
                     completion(.failure(error ?? NetworkError.undefined))
                 }

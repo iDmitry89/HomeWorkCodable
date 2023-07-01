@@ -13,7 +13,7 @@ class CustomTableViewCell: UITableViewCell {
 }
 
 class CarsViewController: UITableViewController {
-
+    
     private let carsService = CarsService()
     private var cars: [Car] = [] {
         didSet {
@@ -22,21 +22,50 @@ class CarsViewController: UITableViewController {
     }
 
     private weak var activity: UIActivityIndicatorView?
-
+    
+    
+    @IBAction func addNewCar(_ sender: Any) {
+        guard let url = URL(string: "https://my-json-server.typicode.com/iDmitry89/HomeWorkCodable/db") else {
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let newCar = Car(id: 55, name: "HUMMER")
+        do {
+            let jsonBody = try JSONEncoder().encode(newCar)
+            request.httpBody = jsonBody
+        } catch {
+            let session = URLSession.shared
+            let task = session.dataTask(with: request) {
+                (data, _, _) in
+                guard let data = data else { return }
+                do {
+                    let sendPost = try JSONDecoder().decode(Car.self, from: data)
+                    print (sendPost)
+                } catch {
+                    
+                }
+            }
+            task.resume ( )
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let activity = UIActivityIndicatorView(style: .medium)
-        activity.sizeToFit()
-        activity.hidesWhenStopped = true
-        self.activity = activity
-
-        let buttonItem = UIBarButtonItem(customView: activity)
-        navigationItem.rightBarButtonItem = buttonItem
-
-        activity.startAnimating()
+//        let activity = UIActivityIndicatorView(style: .medium)
+//        activity.sizeToFit()
+//        activity.hidesWhenStopped = true
+//        self.activity = activity
+//
+//        let buttonItem = UIBarButtonItem(customView: activity)
+//        navigationItem.rightBarButtonItem = buttonItem
+//
+//        activity.startAnimating()
         carsService.fetchCars { result in
-            self.activity?.stopAnimating()
+            //self.activity?.stopAnimating()
             switch result {
                 case .success(let cars):
                     self.cars = cars

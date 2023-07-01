@@ -18,7 +18,7 @@ class Request {
     var urlParams: [String: String] { [:] }
     var method: HTTPMethod { .get }
 
-    private let host: String = "carapi.app"
+    private let host: String = "my-json-server.typicode.com"
     private let scheme: String = "https"
 
     final func buildRequest() throws -> URLRequest {

@@ -8,8 +8,7 @@
 import Foundation
 
 struct ModelContainer: Codable {
-    let data: [Model]
-    //let total: Int
+    let dataModels1: [Model]
 }
 
 struct Model: Codable {
@@ -20,7 +19,7 @@ struct Model: Codable {
 
 final class ModelsRequest: RequestModels {
     override var path: String {
-        "/api/models"
+        "/iDmitry89/HomeWorkCodable/db"
     }
 }
 
@@ -31,10 +30,10 @@ final class ModelsService {
     func fetchModels(completion: @escaping (Result<[Model], Error>) -> Void) {
         apiClientModels.makeRequestModels(ModelsRequest()) { result in
             switch result {
-            case .success(let data):
+            case .success(let dataModels):
                 do {
-                    let modelContainer = try self.decoder.decode(ModelContainer.self, from: data)
-                    completion(.success(modelContainer.data))
+                    let modelContainer = try self.decoder.decode(ModelContainer.self, from: dataModels)
+                    completion(.success(modelContainer.dataModels1))
                 } catch {
                     completion(.failure(error))
                 }

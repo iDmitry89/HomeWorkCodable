@@ -7,9 +7,13 @@
 
 import Foundation
 
+struct ListCars: Codable {
+    let listCars: CarContainer
+}
+
 struct CarContainer: Codable {
     let data: [Car]
-    //let total: Int
+    let dataModels: [Model]
 }
 
 struct Car: Codable {
@@ -19,7 +23,7 @@ struct Car: Codable {
 
 final class CarsRequest: Request {
     override var path: String {
-        "/api/makes"
+        "/iDmitry89/HomeWorkCodable/db"
     }
 }
 
