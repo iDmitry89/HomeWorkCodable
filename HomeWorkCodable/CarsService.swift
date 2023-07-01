@@ -7,13 +7,9 @@
 
 import Foundation
 
-struct ListCars: Codable {
-    let listCars: CarContainer
-}
-
 struct CarContainer: Codable {
     let data: [Car]
-    let dataModels: [Model]
+    //let dataModels: [Model]
 }
 
 struct Car: Codable {
@@ -35,7 +31,6 @@ final class CarsService {
         apiClient.makeRequest(CarsRequest()) { result in
             switch result {
             case .success(let data):
-
                 do {
                     let carContainer = try self.decoder.decode(CarContainer.self, from: data)
                     completion(.success(carContainer.data))
