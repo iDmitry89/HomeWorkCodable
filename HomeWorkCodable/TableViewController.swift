@@ -28,28 +28,29 @@ class CarsViewController: UITableViewController {
         guard let url = URL(string: "https://my-json-server.typicode.com/iDmitry89/HomeWorkCodable/db") else {
             return
         }
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        var requestPost = URLRequest(url: url)
+        requestPost.httpMethod = "POST"
+        requestPost.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let newCar = Car(id: 55, name: "HUMMER")
         do {
             let jsonBody = try JSONEncoder().encode(newCar)
-            request.httpBody = jsonBody
+            requestPost.httpBody = jsonBody
         } catch {
-            let session = URLSession.shared
-            let task = session.dataTask(with: request) {
-                (data, _, _) in
-                guard let data = data else { return }
-                do {
-                    let sendPost = try JSONDecoder().decode(Car.self, from: data)
-                    print (sendPost)
-                } catch {
-                    
-                }
-            }
-            task.resume ( )
+            
         }
+        let session = URLSession.shared
+        let task = session.dataTask(with: requestPost) {
+            (data, _, _) in
+            guard let data = data else { return }
+            do {
+                let sendPost = try JSONDecoder().decode(Car.self, from: data)
+                print(sendPost)
+            } catch {
+                
+            }
+        }
+        task.resume()
     }
     
     override func viewDidLoad() {

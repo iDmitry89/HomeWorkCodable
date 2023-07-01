@@ -41,7 +41,7 @@ class Request {
         }
 
         var request = URLRequest(url: url)
-        request.httpMethod = method.rawValue
+        request.httpMethod = "GET"
 
         if !params.isEmpty {
             request.httpBody = try JSONSerialization.data(withJSONObject: params)
