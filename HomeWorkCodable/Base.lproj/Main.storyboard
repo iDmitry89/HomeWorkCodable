@@ -51,7 +51,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="wU3-kj-iZb"/>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="1ev-Us-P8m">
                             <connections>
-                                <action selector="addNewCar:" destination="DGs-lg-BC8" id="h7l-YN-GdV"/>
+                                <action selector="addNewCar:" destination="DGs-lg-BC8" id="aMA-g6-ADY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
