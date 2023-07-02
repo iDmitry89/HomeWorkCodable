@@ -1,8 +1,8 @@
 //
 //  Request.swift
-//  HomeWorkCodable
+//  Garage
 //
-//  Created by Dmitry on 18.06.2023.
+//  Created by Dmitry on 02.07.2023.
 //
 
 import Foundation
@@ -14,7 +14,7 @@ enum HTTPMethod: String {
 
 class Request {
     var path: String { "" }
-    var params: [String: Any] { [:] }
+    var body: [String: Any] { [:] }
     var urlParams: [String: String] { [:] }
     var method: HTTPMethod { .get }
 
@@ -43,8 +43,8 @@ class Request {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
 
-        if !params.isEmpty {
-            request.httpBody = try JSONSerialization.data(withJSONObject: params)
+        if !body.isEmpty {
+            request.httpBody = try JSONSerialization.data(withJSONObject: body)
         }
 
         return request

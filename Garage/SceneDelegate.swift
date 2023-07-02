@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  HomeWorkCodable
+//  Garage
 //
-//  Created by Dmitry on 18.06.2023.
+//  Created by Dmitry on 02.07.2023.
 //
 
 import UIKit

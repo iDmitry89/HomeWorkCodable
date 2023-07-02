@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Slc-X9-4dB">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Мои автомобили-->
+        <scene sceneID="9M9-Vm-aLx">
+            <objects>
+                <tableViewController id="JSa-8j-CTN" customClass="MainTableViewController" customModule="Garage" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="30c-d1-uyY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="52k-ID-P7G" customClass="CustomTableViewCell" customModule="Garage" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="52k-ID-P7G" id="ARB-Qy-Vmn">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marka" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXW-NC-xry">
+                                            <rect key="frame" x="20" y="11" width="353" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="ngA-V2-Noh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzK-u8-bRw">
+                                            <rect key="frame" x="20" y="37" width="353" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="T3W-eE-ww2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gXW-NC-xry" firstAttribute="trailing" secondItem="ARB-Qy-Vmn" secondAttribute="trailingMargin" id="AH0-qM-BC8"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="BzK-u8-bRw" secondAttribute="bottom" constant="8" id="BZj-Oc-MM9"/>
+                                        <constraint firstItem="gXW-NC-xry" firstAttribute="leading" secondItem="ARB-Qy-Vmn" secondAttribute="leadingMargin" id="Jgz-ey-RSJ"/>
+                                        <constraint firstItem="BzK-u8-bRw" firstAttribute="trailing" secondItem="ARB-Qy-Vmn" secondAttribute="trailingMargin" id="gFk-Fw-f1p"/>
+                                        <constraint firstItem="BzK-u8-bRw" firstAttribute="leading" secondItem="ARB-Qy-Vmn" secondAttribute="leadingMargin" id="ihk-f9-O1o"/>
+                                        <constraint firstItem="gXW-NC-xry" firstAttribute="top" secondItem="ARB-Qy-Vmn" secondAttribute="topMargin" id="nEU-he-6I4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="markaName" destination="gXW-NC-xry" id="Tte-pE-jKf"/>
+                                    <outlet property="modelName" destination="BzK-u8-bRw" id="gAU-y2-SIV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JSa-8j-CTN" id="ulr-0R-t4X"/>
+                            <outlet property="delegate" destination="JSa-8j-CTN" id="IkH-Jn-x8s"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Мои автомобили" id="5jG-1y-Gut">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="IKR-K0-ABF"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aXu-tT-LRC">
+                            <connections>
+                                <action selector="addNewCar:" destination="JSa-8j-CTN" id="XRI-2w-W9J"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Aw-lH-dQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.3435114503816" y="44.366197183098592"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aEr-MD-aGx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Slc-X9-4dB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iHr-FU-xXt">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JSa-8j-CTN" kind="relationship" relationship="rootViewController" id="Wvt-0R-rlx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMb-hR-a6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.625954198473281" y="44.366197183098592"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

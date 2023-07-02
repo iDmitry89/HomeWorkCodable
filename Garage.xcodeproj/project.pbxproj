@@ -7,43 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF64F5E92A3F66C500EF5013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64F5E82A3F66C500EF5013 /* AppDelegate.swift */; };
-		BF64F5EB2A3F66C500EF5013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64F5EA2A3F66C500EF5013 /* SceneDelegate.swift */; };
-		BF64F5ED2A3F66C500EF5013 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64F5EC2A3F66C500EF5013 /* TableViewController.swift */; };
-		BF64F5F02A3F66C500EF5013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF64F5EE2A3F66C500EF5013 /* Main.storyboard */; };
-		BF64F5F32A3F66C600EF5013 /* HomeWorkCodable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF64F5F12A3F66C600EF5013 /* HomeWorkCodable.xcdatamodeld */; };
-		BF64F5F52A3F66C600EF5013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF64F5F42A3F66C600EF5013 /* Assets.xcassets */; };
-		BF64F5F82A3F66C600EF5013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF64F5F62A3F66C600EF5013 /* LaunchScreen.storyboard */; };
-		BF64F6022A3F6A9B00EF5013 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64F6012A3F6A9B00EF5013 /* Request.swift */; };
-		BF64F6042A3F6F3F00EF5013 /* RestApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64F6032A3F6F3F00EF5013 /* RestApiClient.swift */; };
-		BF64F6062A3F734C00EF5013 /* CarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64F6052A3F734C00EF5013 /* CarsService.swift */; };
-		BF6532502A486F9D003BC385 /* ModelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65324F2A486F9D003BC385 /* ModelsViewController.swift */; };
-		BF6532522A487454003BC385 /* ModelsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6532512A487454003BC385 /* ModelsService.swift */; };
-		BF6532542A488066003BC385 /* RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6532532A488066003BC385 /* RequestModels.swift */; };
-		BF6532562A4880A6003BC385 /* RestApiClient2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6532552A4880A6003BC385 /* RestApiClient2.swift */; };
+		BF6E2E052A51D9C50024D7CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E042A51D9C50024D7CB /* AppDelegate.swift */; };
+		BF6E2E072A51D9C50024D7CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E062A51D9C50024D7CB /* SceneDelegate.swift */; };
+		BF6E2E092A51D9C50024D7CB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E082A51D9C50024D7CB /* MainTableViewController.swift */; };
+		BF6E2E0C2A51D9C50024D7CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6E2E0A2A51D9C50024D7CB /* Main.storyboard */; };
+		BF6E2E0F2A51D9C50024D7CB /* Garage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E0D2A51D9C50024D7CB /* Garage.xcdatamodeld */; };
+		BF6E2E112A51D9C50024D7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6E2E102A51D9C50024D7CB /* Assets.xcassets */; };
+		BF6E2E142A51D9C50024D7CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6E2E122A51D9C50024D7CB /* LaunchScreen.storyboard */; };
+		BF6E2E1C2A51E0F30024D7CB /* RestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E1B2A51E0F30024D7CB /* RestAPIClient.swift */; };
+		BF6E2E1E2A51E1780024D7CB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E1D2A51E1780024D7CB /* Request.swift */; };
+		BF6E2E202A51E2060024D7CB /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E1F2A51E2060024D7CB /* CarService.swift */; };
+		BF6E2E222A5206F90024D7CB /* AddNewCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E212A5206F90024D7CB /* AddNewCar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BF64F5E52A3F66C500EF5013 /* HomeWorkCodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkCodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF64F5E82A3F66C500EF5013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF64F5EA2A3F66C500EF5013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF64F5EC2A3F66C500EF5013 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		BF64F5EF2A3F66C500EF5013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BF64F5F22A3F66C600EF5013 /* HomeWorkCodable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeWorkCodable.xcdatamodel; sourceTree = "<group>"; };
-		BF64F5F42A3F66C600EF5013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BF64F5F72A3F66C600EF5013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BF64F5F92A3F66C600EF5013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF64F6012A3F6A9B00EF5013 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		BF64F6032A3F6F3F00EF5013 /* RestApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiClient.swift; sourceTree = "<group>"; };
-		BF64F6052A3F734C00EF5013 /* CarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsService.swift; sourceTree = "<group>"; };
-		BF65324F2A486F9D003BC385 /* ModelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewController.swift; sourceTree = "<group>"; };
-		BF6532512A487454003BC385 /* ModelsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsService.swift; sourceTree = "<group>"; };
-		BF6532532A488066003BC385 /* RequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModels.swift; sourceTree = "<group>"; };
-		BF6532552A4880A6003BC385 /* RestApiClient2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiClient2.swift; sourceTree = "<group>"; };
+		BF6E2E012A51D9C50024D7CB /* Garage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Garage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6E2E042A51D9C50024D7CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF6E2E062A51D9C50024D7CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF6E2E082A51D9C50024D7CB /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		BF6E2E0B2A51D9C50024D7CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF6E2E0E2A51D9C50024D7CB /* Garage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Garage.xcdatamodel; sourceTree = "<group>"; };
+		BF6E2E102A51D9C50024D7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF6E2E132A51D9C50024D7CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF6E2E152A51D9C50024D7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF6E2E1B2A51E0F30024D7CB /* RestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIClient.swift; sourceTree = "<group>"; };
+		BF6E2E1D2A51E1780024D7CB /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BF6E2E1F2A51E2060024D7CB /* CarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarService.swift; sourceTree = "<group>"; };
+		BF6E2E212A5206F90024D7CB /* AddNewCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BF64F5E22A3F66C500EF5013 /* Frameworks */ = {
+		BF6E2DFE2A51D9C50024D7CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,80 +47,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BF64F5DC2A3F66C500EF5013 = {
+		BF6E2DF82A51D9C50024D7CB = {
 			isa = PBXGroup;
 			children = (
-				BF64F5E72A3F66C500EF5013 /* HomeWorkCodable */,
-				BF64F5E62A3F66C500EF5013 /* Products */,
+				BF6E2E032A51D9C50024D7CB /* Garage */,
+				BF6E2E022A51D9C50024D7CB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BF64F5E62A3F66C500EF5013 /* Products */ = {
+		BF6E2E022A51D9C50024D7CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF64F5E52A3F66C500EF5013 /* HomeWorkCodable.app */,
+				BF6E2E012A51D9C50024D7CB /* Garage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF64F5E72A3F66C500EF5013 /* HomeWorkCodable */ = {
+		BF6E2E032A51D9C50024D7CB /* Garage */ = {
 			isa = PBXGroup;
 			children = (
-				BF64F5E82A3F66C500EF5013 /* AppDelegate.swift */,
-				BF64F5EA2A3F66C500EF5013 /* SceneDelegate.swift */,
-				BF64F5EE2A3F66C500EF5013 /* Main.storyboard */,
-				BF64F6032A3F6F3F00EF5013 /* RestApiClient.swift */,
-				BF64F6012A3F6A9B00EF5013 /* Request.swift */,
-				BF64F6052A3F734C00EF5013 /* CarsService.swift */,
-				BF64F5EC2A3F66C500EF5013 /* TableViewController.swift */,
-				BF6532552A4880A6003BC385 /* RestApiClient2.swift */,
-				BF6532532A488066003BC385 /* RequestModels.swift */,
-				BF6532512A487454003BC385 /* ModelsService.swift */,
-				BF65324F2A486F9D003BC385 /* ModelsViewController.swift */,
-				BF64F5F42A3F66C600EF5013 /* Assets.xcassets */,
-				BF64F5F62A3F66C600EF5013 /* LaunchScreen.storyboard */,
-				BF64F5F92A3F66C600EF5013 /* Info.plist */,
-				BF64F5F12A3F66C600EF5013 /* HomeWorkCodable.xcdatamodeld */,
+				BF6E2E042A51D9C50024D7CB /* AppDelegate.swift */,
+				BF6E2E062A51D9C50024D7CB /* SceneDelegate.swift */,
+				BF6E2E082A51D9C50024D7CB /* MainTableViewController.swift */,
+				BF6E2E1B2A51E0F30024D7CB /* RestAPIClient.swift */,
+				BF6E2E1D2A51E1780024D7CB /* Request.swift */,
+				BF6E2E1F2A51E2060024D7CB /* CarService.swift */,
+				BF6E2E0A2A51D9C50024D7CB /* Main.storyboard */,
+				BF6E2E102A51D9C50024D7CB /* Assets.xcassets */,
+				BF6E2E122A51D9C50024D7CB /* LaunchScreen.storyboard */,
+				BF6E2E152A51D9C50024D7CB /* Info.plist */,
+				BF6E2E0D2A51D9C50024D7CB /* Garage.xcdatamodeld */,
+				BF6E2E212A5206F90024D7CB /* AddNewCar.swift */,
 			);
-			path = HomeWorkCodable;
+			path = Garage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BF64F5E42A3F66C500EF5013 /* HomeWorkCodable */ = {
+		BF6E2E002A51D9C50024D7CB /* Garage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF64F5FC2A3F66C600EF5013 /* Build configuration list for PBXNativeTarget "HomeWorkCodable" */;
+			buildConfigurationList = BF6E2E182A51D9C50024D7CB /* Build configuration list for PBXNativeTarget "Garage" */;
 			buildPhases = (
-				BF64F5E12A3F66C500EF5013 /* Sources */,
-				BF64F5E22A3F66C500EF5013 /* Frameworks */,
-				BF64F5E32A3F66C500EF5013 /* Resources */,
+				BF6E2DFD2A51D9C50024D7CB /* Sources */,
+				BF6E2DFE2A51D9C50024D7CB /* Frameworks */,
+				BF6E2DFF2A51D9C50024D7CB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HomeWorkCodable;
-			productName = HomeWorkCodable;
-			productReference = BF64F5E52A3F66C500EF5013 /* HomeWorkCodable.app */;
+			name = Garage;
+			productName = Garage;
+			productReference = BF6E2E012A51D9C50024D7CB /* Garage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BF64F5DD2A3F66C500EF5013 /* Project object */ = {
+		BF6E2DF92A51D9C50024D7CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					BF64F5E42A3F66C500EF5013 = {
+					BF6E2E002A51D9C50024D7CB = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = BF64F5E02A3F66C500EF5013 /* Build configuration list for PBXProject "HomeWorkCodable" */;
+			buildConfigurationList = BF6E2DFC2A51D9C50024D7CB /* Build configuration list for PBXProject "Garage" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,63 +125,60 @@
 				en,
 				Base,
 			);
-			mainGroup = BF64F5DC2A3F66C500EF5013;
-			productRefGroup = BF64F5E62A3F66C500EF5013 /* Products */;
+			mainGroup = BF6E2DF82A51D9C50024D7CB;
+			productRefGroup = BF6E2E022A51D9C50024D7CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF64F5E42A3F66C500EF5013 /* HomeWorkCodable */,
+				BF6E2E002A51D9C50024D7CB /* Garage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BF64F5E32A3F66C500EF5013 /* Resources */ = {
+		BF6E2DFF2A51D9C50024D7CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF64F5F82A3F66C600EF5013 /* LaunchScreen.storyboard in Resources */,
-				BF64F5F52A3F66C600EF5013 /* Assets.xcassets in Resources */,
-				BF64F5F02A3F66C500EF5013 /* Main.storyboard in Resources */,
+				BF6E2E142A51D9C50024D7CB /* LaunchScreen.storyboard in Resources */,
+				BF6E2E112A51D9C50024D7CB /* Assets.xcassets in Resources */,
+				BF6E2E0C2A51D9C50024D7CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BF64F5E12A3F66C500EF5013 /* Sources */ = {
+		BF6E2DFD2A51D9C50024D7CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6532562A4880A6003BC385 /* RestApiClient2.swift in Sources */,
-				BF6532502A486F9D003BC385 /* ModelsViewController.swift in Sources */,
-				BF64F6022A3F6A9B00EF5013 /* Request.swift in Sources */,
-				BF64F5ED2A3F66C500EF5013 /* TableViewController.swift in Sources */,
-				BF64F6042A3F6F3F00EF5013 /* RestApiClient.swift in Sources */,
-				BF64F5E92A3F66C500EF5013 /* AppDelegate.swift in Sources */,
-				BF64F5F32A3F66C600EF5013 /* HomeWorkCodable.xcdatamodeld in Sources */,
-				BF6532522A487454003BC385 /* ModelsService.swift in Sources */,
-				BF64F6062A3F734C00EF5013 /* CarsService.swift in Sources */,
-				BF64F5EB2A3F66C500EF5013 /* SceneDelegate.swift in Sources */,
-				BF6532542A488066003BC385 /* RequestModels.swift in Sources */,
+				BF6E2E092A51D9C50024D7CB /* MainTableViewController.swift in Sources */,
+				BF6E2E1E2A51E1780024D7CB /* Request.swift in Sources */,
+				BF6E2E202A51E2060024D7CB /* CarService.swift in Sources */,
+				BF6E2E222A5206F90024D7CB /* AddNewCar.swift in Sources */,
+				BF6E2E1C2A51E0F30024D7CB /* RestAPIClient.swift in Sources */,
+				BF6E2E052A51D9C50024D7CB /* AppDelegate.swift in Sources */,
+				BF6E2E0F2A51D9C50024D7CB /* Garage.xcdatamodeld in Sources */,
+				BF6E2E072A51D9C50024D7CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BF64F5EE2A3F66C500EF5013 /* Main.storyboard */ = {
+		BF6E2E0A2A51D9C50024D7CB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BF64F5EF2A3F66C500EF5013 /* Base */,
+				BF6E2E0B2A51D9C50024D7CB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		BF64F5F62A3F66C600EF5013 /* LaunchScreen.storyboard */ = {
+		BF6E2E122A51D9C50024D7CB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BF64F5F72A3F66C600EF5013 /* Base */,
+				BF6E2E132A51D9C50024D7CB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -198,7 +186,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BF64F5FA2A3F66C600EF5013 /* Debug */ = {
+		BF6E2E162A51D9C50024D7CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		BF64F5FB2A3F66C600EF5013 /* Release */ = {
+		BF6E2E172A51D9C50024D7CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -312,7 +300,7 @@
 			};
 			name = Release;
 		};
-		BF64F5FD2A3F66C600EF5013 /* Debug */ = {
+		BF6E2E192A51D9C50024D7CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,7 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWorkCodable/Info.plist;
+				INFOPLIST_FILE = Garage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -331,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.iDmitry89.HomeWorkCodable;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.iDmitry89.Garage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -342,7 +330,7 @@
 			};
 			name = Debug;
 		};
-		BF64F5FE2A3F66C600EF5013 /* Release */ = {
+		BF6E2E1A2A51D9C50024D7CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -350,7 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWorkCodable/Info.plist;
+				INFOPLIST_FILE = Garage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -361,7 +349,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.iDmitry89.HomeWorkCodable;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.iDmitry89.Garage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -375,20 +363,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF64F5E02A3F66C500EF5013 /* Build configuration list for PBXProject "HomeWorkCodable" */ = {
+		BF6E2DFC2A51D9C50024D7CB /* Build configuration list for PBXProject "Garage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF64F5FA2A3F66C600EF5013 /* Debug */,
-				BF64F5FB2A3F66C600EF5013 /* Release */,
+				BF6E2E162A51D9C50024D7CB /* Debug */,
+				BF6E2E172A51D9C50024D7CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF64F5FC2A3F66C600EF5013 /* Build configuration list for PBXNativeTarget "HomeWorkCodable" */ = {
+		BF6E2E182A51D9C50024D7CB /* Build configuration list for PBXNativeTarget "Garage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF64F5FD2A3F66C600EF5013 /* Debug */,
-				BF64F5FE2A3F66C600EF5013 /* Release */,
+				BF6E2E192A51D9C50024D7CB /* Debug */,
+				BF6E2E1A2A51D9C50024D7CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -396,17 +384,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BF64F5F12A3F66C600EF5013 /* HomeWorkCodable.xcdatamodeld */ = {
+		BF6E2E0D2A51D9C50024D7CB /* Garage.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BF64F5F22A3F66C600EF5013 /* HomeWorkCodable.xcdatamodel */,
+				BF6E2E0E2A51D9C50024D7CB /* Garage.xcdatamodel */,
 			);
-			currentVersion = BF64F5F22A3F66C600EF5013 /* HomeWorkCodable.xcdatamodel */;
-			path = HomeWorkCodable.xcdatamodeld;
+			currentVersion = BF6E2E0E2A51D9C50024D7CB /* Garage.xcdatamodel */;
+			path = Garage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = BF64F5DD2A3F66C500EF5013 /* Project object */;
+	rootObject = BF6E2DF92A51D9C50024D7CB /* Project object */;
 }
