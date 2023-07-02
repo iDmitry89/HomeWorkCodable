@@ -1,15 +1,8 @@
 {
     "data":[
-        {"id":1,"name":"LADA"},
-        {"id":2,"name":"Reunault"},
-        {"id":3,"name":"KIA"},
-        {"id":4,"name":"Pontiac"}
-    ],
-    "dataModels":[
-        {"id":1,"markes_id":1,"name":"2107"},
-        {"id":2,"markes_id":2,"name":"Logan"},
-        {"id":3,"markes_id":2,"name":"Duster"},
-        {"id":4,"markes_id":3,"name":"Sorento"},
-        {"id":5,"markes_id":4,"name":"Firebird Trans AM"}
+        {"id":1,"name":"LADA","model":"2107"},
+        {"id":2,"name":"Reunault","model":"Duster"},
+        {"id":3,"name":"KIA","model":"Sorento"},
+        {"id":4,"name":"Pontiac","model":"Firebird Trans AM"}
     ]
 }
