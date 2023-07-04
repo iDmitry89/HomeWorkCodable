@@ -72,12 +72,12 @@
 				BF6E2E1B2A51E0F30024D7CB /* RestAPIClient.swift */,
 				BF6E2E1D2A51E1780024D7CB /* Request.swift */,
 				BF6E2E1F2A51E2060024D7CB /* CarService.swift */,
+				BF6E2E212A5206F90024D7CB /* AddNewCar.swift */,
 				BF6E2E0A2A51D9C50024D7CB /* Main.storyboard */,
 				BF6E2E102A51D9C50024D7CB /* Assets.xcassets */,
 				BF6E2E122A51D9C50024D7CB /* LaunchScreen.storyboard */,
 				BF6E2E152A51D9C50024D7CB /* Info.plist */,
 				BF6E2E0D2A51D9C50024D7CB /* Garage.xcdatamodeld */,
-				BF6E2E212A5206F90024D7CB /* AddNewCar.swift */,
 			);
 			path = Garage;
 			sourceTree = "<group>";

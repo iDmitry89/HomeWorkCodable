@@ -15,7 +15,6 @@ class CustomTableViewCell: UITableViewCell {
 class MainTableViewController: UITableViewController {
 
     private var carsService = CarsService()
-    private var modelsService = ModelsService()
     private var car: [Marka] = [] {
         didSet {
             tableView.reloadData()
@@ -34,15 +33,6 @@ class MainTableViewController: UITableViewController {
             switch result {
             case .success(let car):
                 self.car = car
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-        
-        modelsService.fetchModels { result in
-            switch result {
-            case .success(let model):
-                self.model = model
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -72,8 +62,7 @@ class MainTableViewController: UITableViewController {
     }
     
     @IBAction func addNewCar(_ sender: Any) {
-        addNewMarka()
-        addNewModel()
+        Garage.addNewCar()
         tableView.reloadData()
     }
     
