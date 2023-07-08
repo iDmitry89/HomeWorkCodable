@@ -50,9 +50,8 @@ class MainTableViewController: UITableViewController {
         }
         
         let auto = car[indexPath.row]
-        let model = model[indexPath.row]
         cell.markaName.text = auto.name
-        cell.modelName.text = model.model
+        cell.modelName.text = auto.model.model
         
         return cell
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0F861F2A59C39500329138 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F861E2A59C39500329138 /* InfoViewController.swift */; };
 		BF6E2E052A51D9C50024D7CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E042A51D9C50024D7CB /* AppDelegate.swift */; };
 		BF6E2E072A51D9C50024D7CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E062A51D9C50024D7CB /* SceneDelegate.swift */; };
 		BF6E2E092A51D9C50024D7CB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2E082A51D9C50024D7CB /* MainTableViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF0F861E2A59C39500329138 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		BF6E2E012A51D9C50024D7CB /* Garage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Garage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6E2E042A51D9C50024D7CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF6E2E062A51D9C50024D7CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				BF6E2E1D2A51E1780024D7CB /* Request.swift */,
 				BF6E2E1F2A51E2060024D7CB /* CarService.swift */,
 				BF6E2E212A5206F90024D7CB /* AddNewCar.swift */,
+				BF0F861E2A59C39500329138 /* InfoViewController.swift */,
 				BF6E2E0A2A51D9C50024D7CB /* Main.storyboard */,
 				BF6E2E102A51D9C50024D7CB /* Assets.xcassets */,
 				BF6E2E122A51D9C50024D7CB /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 				BF6E2E1E2A51E1780024D7CB /* Request.swift in Sources */,
 				BF6E2E202A51E2060024D7CB /* CarService.swift in Sources */,
 				BF6E2E222A5206F90024D7CB /* AddNewCar.swift in Sources */,
+				BF0F861F2A59C39500329138 /* InfoViewController.swift in Sources */,
 				BF6E2E1C2A51E0F30024D7CB /* RestAPIClient.swift in Sources */,
 				BF6E2E052A51D9C50024D7CB /* AppDelegate.swift in Sources */,
 				BF6E2E0F2A51D9C50024D7CB /* Garage.xcdatamodeld in Sources */,
@@ -309,6 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Garage/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JSON;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -339,6 +344,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Garage/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JSON;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
